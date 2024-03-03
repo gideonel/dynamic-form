@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Change as needed */
+    margin: 0;
+    padding: 20px;      
+background-image: url('background.jpg'); /* Replace 'background.jpg' with the path to your image */
+background-size: cover;
+background-position: center;
+padding: 40px 0;
+}
+.tab-container {
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+}
+.tab {
+    display: flex;
+    background: #eee;
+  color:orange;
+}
+.tab button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+}
+.tab button.active {
+    background-color: orange;
+    color:white;
+}
+.tabcontent {
+    padding: 20px;
+    display: none;
+}
+.tabcontent.active {
+    display: block;
+}
+input, textarea , checkbox{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+ .checkbox-container {
+    
+    align-items: left; /* Vertically center align items */
+    justify-content: flex-start; /* Align items to the left */
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+}
+.checkbox-label {
+    margin-left: 2px; /* Add some space between the checkbox and the label text */
+}

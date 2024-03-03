@@ -1,0 +1,64 @@
+l<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Forms</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+<div class="tab-container">
+    <!-- Tab Links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openForm(event, 'Individual')" id="defaultOpen">Individual</button>
+        <button class="tablinks" onclick="openForm(event, 'Organization')">Organization</button>
+    </div>
+
+    <!-- Content below tabs -->
+    <div class="content-container">
+        <!-- Individual Form Content -->
+        <div id="Individual" class="tabcontent">
+            <h3>Individual Registration</h3>
+            <!-- Individual registration form -->
+            <!-- Your form content here -->
+                <input type="text" name="fullName" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="jobTitle" placeholder="Job Title/Position" required>
+                <input type="text" name="companyName" placeholder="Company/Organization Name" required>
+                <input type="text" name="industrySector" placeholder="Industry/Sector" required>
+                <input type="number" name="companySize" placeholder="Company Size" required>
+                <textarea name="areasOfInterest" placeholder="Areas of Interest" required></textarea>
+                <input type="text" name="dietaryRestrictions" placeholder="Dietary Restrictions">
+                <input type="text" name="emergencyContact" placeholder="Emergency Contact Information" required>
+                <div>
+                  <input type="checkbox" name="shareContact" value="1" id="shareContact">
+                  <label for="shareContact">Share my contact</label>
+                </div>
+                <button type="submit">Register</button>
+        </div>
+
+        <!-- Organization Form Content -->
+        <div id="Organization" class="tabcontent">
+            <h3>Organization Registration</h3>
+            <!-- Organization registration form -->
+            <!-- Your form content here -->
+                <input type="text" name="companyName" placeholder="Company/Organization Name" required>
+                <input type="email" name="contactEmail" placeholder="Contact Email Address" required>
+                <input type="text" name="mailingAddress" placeholder="Mailing Address" required>
+                <input type="text" name="industrySector" placeholder="Industry/Sector" required>
+                <input type="number" name="companySize" placeholder="Company Size" required>
+                <textarea name="areasOfInterest" placeholder="Areas of Interest" required></textarea>
+                <input type="text" name="dietaryRestrictions" placeholder="Dietary Restrictions">
+                <div class="checkbox-container">
+    <input type="checkbox" name="shareContact" value="1" id="shareContact">
+    <label for="shareContact" class="checkbox-label">Share my contact</label>
+</div>
+                <button type="submit">Register</button>
+        </div>
+    </div>
+</div>
+ <script src="script.js"></script>
+</body>
+</html>
